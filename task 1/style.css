@@ -1,0 +1,348 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width:100%;
+}
+#main{
+    height:100%;
+    width:100%;
+    /* background-color: aqua; */
+}
+/* HEADER  */
+header{
+    background-color: white;
+    height:10%;
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+#nav1{
+    display:flex;
+    align-items:center;
+    position:relative;
+    justify-content:space-around;
+}
+#nav2{
+    display:flex;
+    align-items:center;
+    position:relative;
+    justify-content:space-around;
+}
+#logotext{
+    margin-right:300px;
+    margin-left:220px;
+    font-size:x-large;
+}
+#logotext>img{
+ height:50px;
+}
+#navtext{
+    margin-right:400px;
+}
+.HeadingText{
+    margin-right:35px;
+    color:orangered;
+}
+.HeadingText>a{
+    color:orangered;
+}
+.HeadingText>a:hover{
+    color:black;
+}
+.button{
+    margin-right:220px;
+    background-color:rgb(237, 118, 14);
+    height:50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding:10px;
+    width:150px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color:white;
+
+}
+.button:hover{
+    background-color:black;
+    color:white;
+    cursor:pointer;
+}
+@media(max-width:992px){
+    #nav2{
+        display:block;
+        margin-top:20px;
+    }
+    .HeadingText{
+        margin-right:5px;
+        margin-left:20px;
+    }
+    #nav1{
+        margin-right:0;
+    }
+    #logotext{
+        margin-right:30px;
+        margin-left:20px;
+        font-size:x-large;
+    }
+    #btn{
+        margin-top:20px;
+        
+    }
+    #navtext{
+        margin-right:100px;
+    }
+}
+
+/* PAGE 1  */
+
+#page1{
+    display:flex;
+    height:90%;
+    width:100%;
+    background-image: url("./image.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#page1content{
+    width:50%;
+    text-align:center;
+}
+#page1content>p{
+    margin-top:55px;
+    text-align:left;
+    margin-left:55px;
+    font-family: "Nunito", sans-serif; 
+}
+#page1content>h1{
+    margin-left:55px;
+    text-align:left;
+    font-size: 50px;
+    margin-top:150px;
+    font-family: "Mate", serif;
+}
+#page1image{
+    width:50%;
+    margin-left:200px;
+}
+#page1image>img{
+    height:70%;
+    width:60%;
+    margin:20px;
+    margin-top:50px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+#buttongroups{
+    display:flex;
+    margin-top:30px;
+    margin-left:55px;; 
+}
+#button1{
+   background-color: black;
+   color:white;
+   padding:10px;
+   width:100px;
+   border-top-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   margin-right:20px;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+}
+#button2{
+   
+    margin-right:220px;
+    background-color:rgb(237, 118, 14);
+    height:50px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding:10px;
+    width:150px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color:white;
+
+}
+#button2:hover{
+    background-color:black;
+    color:white;
+}
+#pg1icon{
+    margin:55px;
+    display:flex;
+}
+.icon{
+    margin-right:40px;
+    height:40px;
+    width:40px;
+    border-radius:50%;
+    border:1px solid black;
+    display:flex;
+    justify-content:center;
+    text-align:center;
+}
+.icon>img{
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+}
+
+@media(max-width:992px){
+    #page1image{
+        display:block;
+        margin-top:120px;
+        margin-left:10px;
+    }
+    #page1image>img{
+       
+        width:280px;
+
+    }
+    #page1{
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:center;
+        width:auto;
+    }
+}
+
+ /* PAGE 2  */
+
+#page2{
+    height:100%;
+    width:100%;
+    background-image: url("./image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#page2text{
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    height:30%;
+
+}
+#pg2>h1{
+    font-size: 50px;
+    font-family: "Mate", serif;
+}
+#pg2>p{
+    font-family: "Nunito", sans-serif;
+    margin-top:10px;
+    text-align:left;
+}
+#pg2{
+    width:50%;
+}
+#fooditems{
+    display:flex;
+    width:100%;
+    height:70%;
+}
+.food{
+    width:25%;
+    margin:30px;
+    border:1px solid black;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    overflow: hidden;
+    background-color: white;
+}
+.food>img{
+    width:100%;
+    height:400px;
+    object-fit: cover;
+}
+.price{
+   border-radius:50%;
+   border:1px solid black;
+   width:30px;
+   height:30px;
+   display:flex;
+   align-items: center;
+   text-align:center;
+   justify-content:center;
+   margin:5px;
+}
+.food>p{
+    margin:5px;
+}
+@media(max-width:992px){
+    .food{
+        width:400px;
+        margin:15px;
+        height:610px;
+        margin-top:30px;
+    }
+    #page2text{
+        text-align:left;
+        display:flex;
+        height:30%;
+    }
+    #pg2>p{
+        margin-top:5px;
+        text-align:left;
+    }
+}
+/* PAGE 3 */
+#page3{
+    height:100%;
+    width:100%;
+    background-image: url("./image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#pg3{
+   display:flex;
+}
+#buttongroup2{
+    display:flex;
+    margin-left:30px;
+}
+#pg3image{
+    width:50%;
+    margin-top:10px;
+    margin-left:100px;
+}
+#pg3content{
+    margin-left:0;
+    width:50%;
+    }
+#pg3image>img{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#pg3content>h1{
+    font-family: "Nunito", sans-serif;
+    font-size: 50px;
+    text-align:left;
+    margin-top:150px;
+    margin-bottom:30px;
+    margin-left:30px;
+}
+#pg3content>p{
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:50px;
+}
+
+@media(max-width:992px){
+    #pg3image>img{
+     width:300px;
+    }
+    #pg3image{
+        margin-top:150px;
+        margin-left:10px;
+    }
+}
