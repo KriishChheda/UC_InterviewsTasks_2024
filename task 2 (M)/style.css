@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+body{
+    background-color:#FAF0E6;
+}
+.container{
+    display:flex;
+    gap:35px;
+    padding:25px
+}
+h1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:18px 0; 
+    background-color:#352F44;
+    color:white;
+}
+.separator{
+    background-color: white;
+    width:100%;
+    margin-bottom:15px;
+    height:40px;
+    display: flex;
+   align-items:center;
+   padding-left:5px;
+}
+
+#label2{
+    margin-top:60px;
+    margin-bottom:10px;
+}
+.user-input{
+  width:500px;
+}
+
+.user-input>p{
+    width:100%;
+    text-align:left;
+    margin-top:2px;
+}
+.user-input input{
+    outline:none; /* on clicking the input box the outline will not appear  */
+    width:100%;  /* take up the entire width of the container */
+    height:46px;
+    padding:0 17px;
+    border :1px solid lightgray;
+    border-radius:5px;
+    margin-top:10px;
+    margin-right:0;
+    margin-bottom:20px;
+    margin-left:0;
+    font-size:1.05rem;
+
+}
+
+.btn1:hover{
+   background-color:#352F44;
+}
+.btn2:hover{
+    background-color:#352F44;
+ }
+.btn1,.btn2{
+    width:100%; /* take up the entire width of the container */
+    font-size:1.05rem;
+    text-align:center;
+    height:40px;
+    border:1px solid lightgray;
+    border-radius:5px;
+    background-color: #5C5470;
+    color:white;
+    height:35px;
+    cursor:pointer;
+}
+.weather-info{
+    width:100%;
+}
+.current-weather{
+     display:flex;
+     justify-content: space-between;
+     color:white;
+     background-color:#352F44;
+     padding:20px 70px 20px 20px; /* spacing between the outer box and the inner box which has the information  */
+     border-radius: 5px;
+}
+
+.current-weather h2{
+    font-size: 1.7rem;;
+}
+.weather-info h4{
+   font-size:1.2rem;
+   margin-top:10px;
+   font-weight:500;
+}
+
+.days-forecast h2{
+    margin:20px 0;
+    font-size: 1.7rem;
+    text-align:left;
+}
+
+.weather-cards{
+    display:flex;
+    gap:20px;
+}
+.weather-cards .card{
+    width: calc(100% /5);
+    background-color: #5C5470;
+    color:white;
+    padding:18px 16px;
+    border-radius:5px;
+}
+.weather-cards .card img{
+    max-width:70px;
+    margin:5px 0 -12px 0;
+}
+
+@media(max-width: 1400px){
+    .weather-info .current-weather{
+        padding:20px;
+    }
+    .weather-cards{
+        flex-wrap:wrap; /* The 5 cards will go start going to the next line on shrinking the screen */
+    }
+    .weather-cards card{
+        width: calc(100% / 4 -15px);
+    }
+}
+
+@media(max-width: 1200px){
+    .weather-cards .card{
+        width:calc(100% / 3 - 15px);
+    }
+}
+
+@media(max-width:950px){
+    .user-input{
+        width:450px;
+    }
+    .weather-cards .card{
+        width:calc(100%/2 - 10px);
+    }
+}
+@media(max-width:750px){
+    .container{
+        flex-wrap:wrap;
+        padding:15px;
+    }
+    .user-input {   
+     width:100%;  /* because for all screen sizes <=950 pixels we had assigned width to 450 px */
+    }
+}
