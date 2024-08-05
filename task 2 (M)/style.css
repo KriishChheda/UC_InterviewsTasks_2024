@@ -39,7 +39,7 @@ h1{
   width:500px;
 }
 
-.user-input>p{
+.user-input>h3{
     width:100%;
     text-align:left;
     margin-top:2px;
@@ -56,7 +56,11 @@ h1{
     margin-bottom:20px;
     margin-left:0;
     font-size:1.05rem;
+}
 
+#converter{
+    text-align:left;
+    margin-top:60px;
 }
 
 .btn1:hover{
@@ -128,7 +132,7 @@ h1{
         flex-wrap:wrap; /* The 5 cards will go start going to the next line on shrinking the screen */
     }
     .weather-cards card{
-        width: calc(100% / 4 -15px);
+        width: calc(100% / 4 -15px); /* reducing 15 px from each card to balance out the gaps between the cards */
     }
 }
 
