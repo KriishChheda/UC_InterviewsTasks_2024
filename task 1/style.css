@@ -19,29 +19,29 @@ header{
     width:100%;
     display:flex;
     align-items:center;
+    justify-content:center;
 }
 #nav1{
     display:flex;
     align-items:center;
-    position:relative;
-    justify-content:space-around;
 }
 #nav2{
     display:flex;
     align-items:center;
-    position:relative;
-    justify-content:space-around;
 }
 #logotext{
     margin-right:300px;
-    margin-left:220px;
+    margin-left:90px;
     font-size:x-large;
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 #logotext>img{
  height:50px;
 }
 #navtext{
-    margin-right:400px;
+    margin-right:150px;
 }
 .HeadingText{
     margin-right:35px;
@@ -52,11 +52,12 @@ header{
 }
 .HeadingText>a:hover{
     color:black;
+    cursor: pointer;
 }
 .button{
-    margin-right:220px;
+    margin-right:100px;
     background-color:rgb(237, 118, 14);
-    height:50px;
+    height:60px;
     display: flex;
     align-items:center;
     justify-content: center;
@@ -65,7 +66,6 @@ header{
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     color:white;
-
 }
 .button:hover{
     background-color:black;
@@ -85,16 +85,15 @@ header{
         margin-right:0;
     }
     #logotext{
-        margin-right:30px;
-        margin-left:20px;
-        font-size:x-large;
+        margin-right:5px;
+        padding:10px;
+        font-size:large;
     }
     #btn{
         margin-top:20px;
-        
     }
     #navtext{
-        margin-right:100px;
+        margin-right:80px;
     }
 }
 
@@ -107,11 +106,9 @@ header{
     background-image: url("./image.png");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
 }
 #page1content{
     width:50%;
-    text-align:center;
 }
 #page1content>p{
     margin-top:55px;
@@ -123,7 +120,7 @@ header{
     margin-left:55px;
     text-align:left;
     font-size: 50px;
-    margin-top:150px;
+    margin-top:60px;
     font-family: "Mate", serif;
 }
 #page1image{
@@ -175,6 +172,7 @@ header{
 #button2:hover{
     background-color:black;
     color:white;
+    cursor:pointer;
 }
 #pg1icon{
     margin:55px;
@@ -188,7 +186,6 @@ header{
     border:1px solid black;
     display:flex;
     justify-content:center;
-    text-align:center;
 }
 .icon>img{
     display:flex;
@@ -197,21 +194,41 @@ header{
 }
 
 @media(max-width:992px){
+   #page1content>h1{
+    margin-top:27px;
+    font-size:40px;
+    margin-left:4px;
+    padding:6px;
+    }
+    #page1content>p{
+        margin-top:30px;
+        margin-left:4px;
+        padding:6px;
+    }
     #page1image{
-        display:block;
-        margin-top:120px;
-        margin-left:10px;
+        margin-left:0;
     }
     #page1image>img{
-       
         width:280px;
-
+        margin-left:0;
+        padding:25px
     }
     #page1{
         background-repeat: no-repeat;
         background-size:cover;
         background-position:center;
         width:auto;
+    }
+    #buttongroups{
+        margin-top:30px;
+        margin-left:4px;
+    }
+    #button2{
+        padding:30px;
+    }
+    #pg1icon{
+        margin-left:4px;
+        margin-right:10px;
     }
 }
 
@@ -223,15 +240,15 @@ header{
     background-image: url("./image.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding:30px;
 }
 #page2text{
     text-align:center;
     display:flex;
     justify-content: center;
     height:30%;
-
 }
-#pg2>h1{
+#pg2>h2{
     font-size: 50px;
     font-family: "Mate", serif;
 }
@@ -247,10 +264,10 @@ header{
     display:flex;
     width:100%;
     height:70%;
+    gap:40px;
 }
 .food{
-    width:25%;
-    margin:30px;
+    width:calc(100% /4  -10px); 
     border:1px solid black;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -259,8 +276,12 @@ header{
 }
 .food>img{
     width:100%;
-    height:400px;
+    height:350px;
     object-fit: cover;
+}
+.foodText{
+    display:flex;
+    align-items:center;
 }
 .price{
    border-radius:50%;
@@ -269,7 +290,6 @@ header{
    height:30px;
    display:flex;
    align-items: center;
-   text-align:center;
    justify-content:center;
    margin:5px;
 }
@@ -277,20 +297,17 @@ header{
     margin:5px;
 }
 @media(max-width:992px){
+   #pg2{
+        width:100%;
+    }
+    #pg2>h2{
+        font-size: 40px;
+    }
+    #fooditems{
+        gap:10px;
+    }
     .food{
-        width:400px;
-        margin:15px;
-        height:610px;
-        margin-top:30px;
-    }
-    #page2text{
-        text-align:left;
-        display:flex;
-        height:30%;
-    }
-    #pg2>p{
-        margin-top:5px;
-        text-align:left;
+        height:530px;
     }
 }
 /* PAGE 3 */
@@ -300,6 +317,7 @@ header{
     background-image: url("./image.png");
     background-repeat: no-repeat;
     background-size: cover;
+    padding:30px;
 }
 #pg3{
    display:flex;
@@ -307,11 +325,10 @@ header{
 #buttongroup2{
     display:flex;
     margin-left:30px;
+     cursor: pointer;
 }
 #pg3image{
-    width:50%;
-    margin-top:10px;
-    margin-left:100px;
+  width:30%; 
 }
 #pg3content{
     margin-left:0;
@@ -322,6 +339,7 @@ header{
     border-bottom-right-radius: 100px;
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
+    width:100%;
 }
 #pg3content>h1{
     font-family: "Nunito", sans-serif;
@@ -338,11 +356,23 @@ header{
 }
 
 @media(max-width:992px){
+    #page3{
+        padding:0px;
+    }
     #pg3image>img{
-     width:300px;
+    width:140%;
     }
     #pg3image{
         margin-top:150px;
         margin-left:10px;
+        margin-right:55px;
     }
+    #pg3content>h1{
+        font-size: 35px;
+        text-align:left;
+        margin-top:30px;
+    }
+    #pg3content{
+     padding-right:0;
+        }
 }
