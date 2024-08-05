@@ -81,7 +81,8 @@ const getCityCoordinates = () => {
     fetch(GEOCODING_API_URL).then(res => res.json()).then(data => {
            if(!data.length) return alert(`No coordinates found for ${cityName}`);
            const{name,lat,lon}=data[0];
-           // data[] is an array of object and every object has 3 variables name , lat , lon
+     // i am  creating an object which has name lat and lon as three variables . 
+          // data is an array of objects and every object has three variables name lat and lon
            getWeatherDetails(name,lat,lon); // function call getWeatherDetails()
         })
         .catch(() => {
@@ -90,8 +91,11 @@ const getCityCoordinates = () => {
 }
 
 searchButton.addEventListener("click", getCityCoordinates);
-
-
+// when the searchButton will get clicked the getCtyCoordnates function will start getting executed
+// The api will return a promise function which will have a status of success if the data is retrieved succesfully.
+// if the promise status is a success then the first function in .then() will get executed , res gets the promise object 
+// the .then() function will also return a promise whose output will have the value generated from the res function i.e the js object
+// the .then() functon returns a promise which will have the json object as value . this promise object will go to data  
 
 const unitConverter = document.querySelector(".btn2");
 const tempInput = document.querySelector("#label2");
